@@ -46,3 +46,4 @@ function justaucorps_justo_pop(id_justo) {
     justo.style.animation = 'justaucorps-justo-pop 1s ease-in-out';
     justo.style.animationFillMode = 'forwards';
 }
+// Animation de l'apparition de la page contact

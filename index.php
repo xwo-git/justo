@@ -76,8 +76,8 @@
         <a href=""></a>
         <nav id="nav">
             <ul class="center">
-                <li class="nav-buttons"><a href="" class="a-nav">Accueil</a></li>
-                <li class="nav-buttons"><a href="#" class="a-nav">Contact</a></li>
+                <li class="nav-buttons"><a href="index.php" class="a-nav">Accueil</a></li>
+                <li class="nav-buttons"><a href="contact.php?username=<?= $username?>" class="a-nav" onclick="contact_open('contact-page')">Contact</a></li>
                 <li class="nav-buttons"><a href="produit.php" class="a-nav" onclick="justaucorpswebsiteclose('website');">Justaucorps</a></li> <!-- Ne pas oublier de laisser de la place pour un menu deroulant (methode voir obsidina)-->
                 <li class="nav-buttons"><a href="#" class="a-nav" onclick="pop_connexion('connexion-page'); web_site_slide('website')"><?php echo $connexion_cc; ?></a></li>
                 <li class="nav-buttons"><a href="#" class="a-nav"><?php echo $username ?></a> </li>
@@ -142,44 +142,10 @@
         </div>
     </div>
 
-    <div class="contact-page" style="    
-    width: 650px;
-    height: 650px;
-    background-color: rgb(0, 52, 100);
-    border-radius: 20px;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    ">
-        <div class="top-contact">
-            <div class="left">
-                <a href="#" class="close-contact-link"><span>Retour </span><ion-icon name="close-circle-outline"></ion-icon></a>
-            </div>
-            <div class="center">
-                <h1>CONTACT</h1>
-            </div>
-        </div>
-        <?php
-            if($username == "") {
-                echo '<h2 class="contact-not-login">Vous devez se connecter ! </h2>';
-                echo '<br>';
-                echo '<a href="#" class="login-page-button-submit btn-submit">Se connecter</a>';
-            } else {
-                echo '<p class="text-contact">Mail : Justaugym@gmail.com</p>';
-                echo '<p class="text-contact">Ecrire votre message : </p>';
-                echo '<form action="admin.php" method="post">';
-                echo '<textarea id="message" name="message" rows="4" cols="50" required></textarea>';
-                echo '<button type="submit" value="Envoyer" class="login-page-button-submit btn-submit">Envoyer</button>';
-                echo '</form>';
-            }
-        ?>
+
     </div>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>
-<!-- test github -->
+
 
