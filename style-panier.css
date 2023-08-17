@@ -1,0 +1,51 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(174,153,231,1) 0%, rgba(89,74,186,1) 0%, rgba(96,91,193,1) 7%, rgba(102,107,199,1) 29%, rgba(109,124,206,1) 41%, rgba(112,132,209,1) 54%, rgba(114,136,211,1) 61%, rgba(116,142,213,1) 71%, rgba(134,188,232,1) 100%);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+}
+.right {
+    width: calc((100%/3) - 20px);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: 'Prompt';
+}
+.right button {
+    background-color: red;
+    width: 10%;
+    height: 10%;
+}
+.left {
+    width: calc((100%/3) - 20px);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: 'Prompt';
+}
+
+.left a {
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    width: calc(100% / 3 - 20px);
+    padding: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Prompt';
+    letter-spacing: 5px;
+    text-transform:uppercase;
+    color: white;
+}
+
