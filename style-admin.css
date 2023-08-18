@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(174,153,231,1) 0%, rgba(89,74,186,1) 0%, rgba(96,91,193,1) 7%, rgba(102,107,199,1) 29%, rgba(109,124,206,1) 41%, rgba(112,132,209,1) 54%, rgba(114,136,211,1) 61%, rgba(116,142,213,1) 71%, rgba(134,188,232,1) 100%);
 }
 
 .nav {
@@ -54,4 +56,12 @@ body {
 
 hr {
     margin: 80%;
+}
+
+.delete-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(181, 64, 64);
 }
