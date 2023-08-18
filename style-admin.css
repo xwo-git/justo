@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    font-family: 'Prompt', 'sans-serif';
+}
+.lnba {
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white
+}
+.lnba > a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.cnba {
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.rnba {
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.rnba > a {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    transition: 0.3s ease-in-out;
+}
+.rnba > a:hover {
+    scale: 150%;
+    transition: 0.3s ease-in-out;
+}
+
+hr {
+    margin: 80%;
+}
