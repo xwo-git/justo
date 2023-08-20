@@ -110,7 +110,13 @@
         <div class="bottom-add-popup">
             <form action="traitement-admin.php" method="post">
                 <input type="text" placeholder="Nom :" class="input-add-popup iap1">
-                <input type="number" placeholder="Prix : " class="input-add-popup iap2>
+                <input type="number" placeholder="Prix : " class="input-add-popup iap2">
+                <textarea name="description-add-product" id="description-add-product" cols="30" rows="10" placeholder="Description :"></textarea>
+                <input type="file" class="input-add-product iap3">
+                <!-- coder la partie gestion de l'importation du fichier avec différents types d'erreur possible -->
+                <input type="number" placeholder="Stock" class="input-add-popup iap4">
+
+                
 
             </form>
         </div>
