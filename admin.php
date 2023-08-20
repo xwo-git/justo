@@ -83,7 +83,7 @@
         border-left: 1px solid white;
         border-top: 1px solid white;
         box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.746);
-
+        display: none;
     ">
         <div class="top-delete-popup">
             <a href="#" class="link-close-delete"><ion-icon name="close-circle-outline" class="icon-close-delete"></ion-icon></a>
@@ -100,6 +100,18 @@
                     border: 0px solid white;
                 " class="input-delete"> <br>
                 <button type="submit" class="btn-admin-delete" value="Supprimer le produit">Supprimer le produit</button>
+            </form>
+        </div>
+    </div>
+    <div class="add-popup">
+        <div class="top-add-popup">
+            <h3>Ajouter un produit</h3>
+        </div>
+        <div class="bottom-add-popup">
+            <form action="traitement-admin.php" method="post">
+                <input type="text" placeholder="Nom :" class="input-add-popup iap1">
+                <input type="number" placeholder="Prix : " class="input-add-popup iap2>
+
             </form>
         </div>
     </div>
